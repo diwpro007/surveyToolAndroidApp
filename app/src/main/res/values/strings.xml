@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Survey Tool</string>
+    <string name="network_unavailable_message">Network not available</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

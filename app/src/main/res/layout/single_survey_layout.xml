@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/single_game_layout_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:background="@drawable/custom_click_action"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp">
+
+        <TextView
+            android:id="@+id/single_survey_textview_survey_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Survey Name"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/single_survey_textview_offline_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/single_survey_textview_survey_name"
+            android:text="0 data offline"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ff1111" />
+
+
+        <LinearLayout
+            android:id="@+id/single_survey_linear_layout_button_groups"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/single_survey_textview_offline_data"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <!--TODO customize button-->
+            <Button
+                android:id="@+id/single_survey_button_upload_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload Data" />
+
+            <Button
+                android:id="@+id/single_survey_button_take_survey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Take Survey" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Show Location"
+                android:id="@+id/show_location"/>
+            <!--TODO underline this text-->
+            <TextView
+                android:id="@+id/single_survey_textview_more"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="More>>"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
